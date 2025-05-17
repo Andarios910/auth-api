@@ -45,6 +45,11 @@ jobs:
           CI: true
           HOST: localhost
           PORT: 5000
+          PGHOST_TEST: ${{ secrets.PG_HOST_TEST }}
+          PGPORT_TEST: ${{ secrets.PG_PORT_TEST }}
+          PGUSER_TEST: ${{ secrets.PG_USER_TEST }}
+          PGPASSWORD_TEST: ${{ secrets.PG_PASSWORD_TEST }}
+          PGDATABASE_TEST: ${{ secrets.PG_DATABASE_TEST }}
           PGHOST: ${{ secrets.PG_HOST }}
           PGPORT: ${{ secrets.PG_PORT }}
           PGUSER: ${{ secrets.PG_USER }}
