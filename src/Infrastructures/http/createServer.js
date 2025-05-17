@@ -23,7 +23,6 @@ const createServer = async (container) => {
     },
   ]);
 
-  // add comment
   server.route({
     method: 'GET',
     path: '/',
